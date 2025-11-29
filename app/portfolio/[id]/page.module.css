@@ -1,0 +1,98 @@
+.main {
+    padding: 8rem 2rem 4rem;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.backLink {
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+
+.backLink:hover {
+    opacity: 1;
+}
+
+.header {
+    margin-bottom: 3rem;
+}
+
+.title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+.meta {
+    display: flex;
+    gap: 4rem;
+    border-top: 1px solid #eee;
+    padding-top: 2rem;
+}
+
+.metaItem {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #999;
+    font-weight: 600;
+}
+
+.value {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.imageWrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: #f0f0f0;
+    margin-bottom: 4rem;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.image {
+    object-fit: cover;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.descriptionTitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .meta {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
