@@ -10,7 +10,7 @@ export interface Project {
 
 export const projects: Project[] = [
     {
-        id: 'project-1',
+        id: 'equiluna',
         title: 'Equiluna',
         categories: ['Coding', 'UX/UI'],
         image: '/images/project1.png',
@@ -19,7 +19,7 @@ export const projects: Project[] = [
         description: 'A coding and UX/UI project focused on balance and harmony.',
     },
     {
-        id: 'project-2',
+        id: 'PAMA',
         title: 'Maintenance App',
         categories: ['UX/UI'],
         image: '/images/project2.png',
@@ -28,7 +28,7 @@ export const projects: Project[] = [
         description: 'A mobile application designed for tracking machine maintenance schedules.',
     },
     {
-        id: 'project-3',
+        id: 'CSEF',
         title: 'Task Manager',
         categories: ['UX/UI'],
         image: '/images/project3.jpg',
@@ -37,7 +37,7 @@ export const projects: Project[] = [
         description: 'A clean and efficient task management interface for remote teams.',
     },
     {
-        id: 'project-4',
+        id: 'photography',
         title: 'Skate Culture',
         categories: ['Creative'],
         image: '/images/project4.jpg',
@@ -46,7 +46,7 @@ export const projects: Project[] = [
         description: 'A creative photography series exploring modern skateboard culture.',
     },
     {
-        id: 'project-5',
+        id: 'art',
         title: 'Mountain Roads',
         categories: ['Creative'],
         image: '/images/project5.jpg',
