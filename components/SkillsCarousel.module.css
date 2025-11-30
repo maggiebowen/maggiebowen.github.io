@@ -1,0 +1,40 @@
+.section {
+    padding: 4rem 0;
+    background-color: var(--background);
+    overflow: hidden;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slideTrack {
+    display: flex;
+    width: calc(200px * 34);
+    /* Adjust based on number of slides (17 * 2) */
+    animation: scroll 40s linear infinite;
+}
+
+.slide {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-grey);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-200px * 17));
+        /* Scroll half the track */
+    }
+}

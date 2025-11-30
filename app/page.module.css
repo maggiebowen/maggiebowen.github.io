@@ -3,12 +3,12 @@
 }
 
 .hero {
-    height: 100vh;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 0 2rem;
+    padding: 6rem 2rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -43,34 +43,40 @@
 }
 
 .latestWorks {
-    padding: 6rem 2rem;
+    padding: 4rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #f9f9f9;
-}
-
-.sectionHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 3rem;
-}
-
-.sectionHeader h2 {
-    font-size: 2rem;
-    margin: 0;
-}
-
-.viewAll {
-    font-size: 1rem;
-    font-weight: 600;
-    text-decoration: underline;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+    /* Force 2 columns */
     gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.viewAllContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.viewAllButton {
+    display: inline-block;
+    padding: 1rem 3rem;
+    background-color: transparent;
+    color: var(--foreground);
+    border: 1px solid var(--foreground);
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.viewAllButton:hover {
+    background-color: var(--foreground);
+    color: var(--background);
 }
 
 @media (max-width: 768px) {
