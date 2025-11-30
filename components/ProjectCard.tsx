@@ -18,6 +18,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                     className={styles.image}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                     quality={90}
+                    unoptimized
                 />
             </div>
             <div className={styles.info}>
